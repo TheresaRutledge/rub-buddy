@@ -13,6 +13,9 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    position: fixed;
+    z-index: 5;
+    width:100%;
 }
 
 header h1{
@@ -55,6 +58,7 @@ section {
     background-position: center;
     height:600px;
     position:relative;
+    top:50px;
 }
 
 .hero-form {
