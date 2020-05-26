@@ -138,9 +138,9 @@ header nav ul li a {
 .intro p{
     line-height: 1.7;
     color:#39a6b2;
-    width:80%;
+   
     font-size: 20px;
-    text-align:center;
+   
     
 }
 
@@ -260,20 +260,18 @@ flex:1;
     color:#fce138;
 }
 .contact-info div{
-    width:480px;
-    display:inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 30px 0 0 60px;
-    color:white;
-  
-    
+    color:white;  
+}
+
+.contact-info{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .contact-info iframe{
-    width:400px;
     height:400px;
-    display:inline;
+    
 }
 
 .contact-header{
@@ -286,7 +284,7 @@ flex:1;
     color:white;
     line-height: 1.5;
     margin:20px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-style:normal;
     
 }
@@ -295,6 +293,33 @@ flex:1;
     color:#fce138
 }
 
+.contact-info > * {
+    flex:1;
+    margin:15px;
+}
+
+.contact-form input, .contact-form textarea{
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color:#024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top:5px;
+}
+
+.contact-form button {
+    width: 100%;
+    border:none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+
+
+}
 
 
 
