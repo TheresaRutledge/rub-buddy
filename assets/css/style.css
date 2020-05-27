@@ -129,10 +129,14 @@ header nav ul li a {
     font-size: 48px;
     color:#024e76;
     border-bottom: 3px solid #fce138;
-    padding-bottom: 20px;
+    padding:20px  20px;
     text-align: center;
-    margin: 10px auto 35px auto;
+    margin: 20px auto 35px auto;
     width: 50%;
+}
+
+section{
+    padding: 20px 0;
 }
 
 /*What We Do*/
@@ -260,43 +264,53 @@ flex:1;
 .services{
     background-color: #fce138;
     margin:20px;
+}
 
+.service-grid-wrapper{
+    display:flex;
+    width:100%;
+    justify-content: center;
 }
 .service-grid-container{
-max-width:940px;
-margin:0 auto;
-padding-bottom: 10px;
-display:grid;
-grid-template-columns:1fr repeat(2, 2fr);
-grid-template-rows: auto;
+    background-color: lightyellow;
+    width:80%;
+    display:grid;
+    grid-template-columns:1fr repeat(2, 4fr);
+    grid-template-rows: repeat(5, 1fr)2fr;
+    border:2px solid #024e76;
+    columns: #024e76;
+    font-size: 1.2rem;
 
 }
 
 .service-grid-item{
-background-color:#fff;
-border:2px solid;
-padding: 10px;
-color:#024e76;
-text-align: center;
-
+    border:2px solid #024e76;
+    color:#024e76;
+    padding: 15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.box1{
-grid-column: 1/2;
-grid-row:1/7;
-font-weight:bolder;
-
+.service-grid-item.basic{
+    grid-column:2 / span 1;
 }
 
-.box10{
-    grid-column:2/4;
-    grid-row:5/6;
-}
-.box2, .box3, .box11, .box12{
-font-weight: bolder;
+.service-grid-item.both{
+    grid-column: 2 / span 2;
 }
 
+.service-grid-item.cancel{
+    grid-row:1/ -1;
+    writing-mode: vertical-lr;
+    transform:rotate(180deg);
+}
 
+.grid-head, .grid-price, .cancel{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 
 
 /*Reach Out */
