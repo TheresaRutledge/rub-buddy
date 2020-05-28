@@ -331,7 +331,10 @@ color: var(--primary-color);
 flex:1;
 overflow:hidden;
 }
-
+.trainer-name, .trainer-role{
+    display:none;
+    margin-bottom:10px;
+}
 .trainer-img{
     width:100%;
     min-height: 400px;
@@ -357,7 +360,9 @@ overflow:hidden;
     position:relative;
     z-index: 10;
     top:300px;
+    opacity:0;
     transition:top 0.8s;
+    transition:opacity 0.1;
 }
 .trainer-img h3{
     font-size: 28px;
@@ -373,6 +378,7 @@ overflow:hidden;
 
 .trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4{
     top:0;
+    opacity:1;
 
 }
 
@@ -628,6 +634,12 @@ justify-content: center;
     }
     .contact-info iframe{
         flex:1 100%;
+    }
+    .trainer-name, .trainer-role{
+        display:initial;
+    }
+    .trainer-img::after, .trainer-img h3, .trainer-img h4{
+        display:none;
     }
 }
 
